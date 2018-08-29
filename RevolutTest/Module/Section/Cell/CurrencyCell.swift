@@ -26,11 +26,6 @@ class CurrencyCell: UICollectionViewCell, UITextFieldDelegate {
         self.codeLabel.text = item.currency.code
         self.nameLabel.text = item.currency.code
 
-        if item.currency.code == "EUR" {
-            print(item.value)
-            print("\(item.value)")
-        }
-        
         inputTextField.text = "\(item.value)".split(separator: ".").joined(separator: ",")
         
         inputTextField.delegate = self
